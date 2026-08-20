@@ -1,7 +1,7 @@
 using UnityEngine;
 
-public class Graph : MonoBehaviour 
+public class Graph : MonoBehaviour
 {
-    [SerializedField]
+    [SerializeField]
     Transform pointPrefab;
 }
