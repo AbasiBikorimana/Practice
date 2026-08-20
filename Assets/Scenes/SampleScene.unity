@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Graph
   pointPrefab: {fileID: 4175197360096009232, guid: 5a9153867b0da6a44a5246df41363872, type: 3}
-  resolution: 50
+  resolution: 100
 --- !u!4 &2094849049
 Transform:
   m_ObjectHideFlags: 0
