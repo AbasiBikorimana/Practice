@@ -10,6 +10,7 @@ public class Graph : MonoBehaviour
 
     Transform[] points;
 
+//Creates an instance of the point prefab
     void Awake()
     {
         float step = 2f / resolution;
@@ -21,9 +22,7 @@ public class Graph : MonoBehaviour
         for (int i = 0; i < points.Length; i++)
         {
             Transform point = points[i] = Instantiate(pointPrefab);
-
             position.x = (i + 0.5f) * step - 1f;
-
             point.localPosition = position;
             point.localScale = scale;
             point.SetParent(transform, false);
@@ -37,7 +36,7 @@ public class Graph : MonoBehaviour
         {
             Transform point = points[i];
             Vector3 position = point.localPosition;
-            position.y = Mathf.Sin(Mathf.PI * (position.x + time));
+            position.y = FunctionLibrary.MultiWave(position.x, time);
             point.localPosition = position;
         }
     }
