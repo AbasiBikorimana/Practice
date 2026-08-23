@@ -2,18 +2,21 @@ using UnityEngine;
 
 public class Graph : MonoBehaviour
 {
-    [SerializeField]
+    // Prefab used to creat each point on the graph.
+    //SerializedField allows it to be assigned through Unity
+    [SerializeField]  
     Transform pointPrefab;
 
     [SerializeField, Range(10,100)]
-    int resolution = 10;
+    int resolution = 10; 
 
-    [SerializeField, Range(0, 1)]
+    [SerializeField, Range(0, 2)]
     int function;
 
+    //Stores references to all instantiated graph points
     Transform[] points;
 
-//Creates an instance of the point prefab
+    //Creates an instance of the point prefab
     void Awake()
     {
         float step = 2f / resolution;
@@ -43,9 +46,13 @@ public class Graph : MonoBehaviour
             {
                 position.y = FunctionLibrary.Wave(position.x, time);
             }
-            else
+            else if (function == 1)
             {
                 position.y = FunctionLibrary.MultiWave(position.x, time);
+            }
+            else
+            {
+                position.y = FunctionLibrary.Ripple(position.x, time);
             }
             point.localPosition = position;
         }
