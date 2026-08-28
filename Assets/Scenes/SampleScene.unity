@@ -249,7 +249,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.000015258789, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -276,7 +276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FrameRateCounter
   display: {fileID: 165582282}
-  sampleDuration: 1
+  displayMode: 0
+  sampleDuration: 2
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,9 +729,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -849.1458, y: 0}
+  m_AnchoredPosition: {x: -849.1461, y: -0.0009765625}
   m_SizeDelta: {x: -849.1459, y: -957.8975}
-  m_Pivot: {x: 1, y: 1}
+  m_Pivot: {x: 1.0000002, y: 1.000001}
 --- !u!114 &1011337948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,7 +801,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Graph
   pointPrefab: {fileID: 4175197360096009232, guid: 5a9153867b0da6a44a5246df41363872, type: 3}
   resolution: 100
-  function: 4
+  function: 0
+  transitionMode: 1
+  functionDuration: 1
+  transitionDuration: 1
 --- !u!4 &2094849049
 Transform:
   m_ObjectHideFlags: 0
