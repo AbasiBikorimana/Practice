@@ -276,8 +276,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FrameRateCounter
   display: {fileID: 165582282}
-  displayMode: 0
-  sampleDuration: 2
+  displayMode: 1
+  sampleDuration: 1
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2094849049}
   - component: {fileID: 2094849048}
+  - component: {fileID: 2094849050}
   m_Layer: 0
   m_Name: Graph
   m_TagString: Untagged
@@ -794,7 +795,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094849047}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99c7218f8f485ac498522d3097017c1a, type: 3}
   m_Name: 
@@ -820,6 +821,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2094849050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094849047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5364c302bba4ddd831863e903537ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GPUGraph
+  resolution: 200
+  function: 0
+  transitionMode: 0
+  functionDuration: 1
+  transitionDuration: 1
+  computeShader: {fileID: 7200000, guid: b79d51c0db66a414fa336165e5fc9f1f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

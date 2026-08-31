@@ -67,7 +67,7 @@ public static class FunctionLibrary
     }
 
     public static Vector3 Sphere (float u, float v, float t)
-    {
+{
         float r = 0.9f + 0.1f * Sin(PI * (6f * u + 4f * v + t));
         float s = r * Cos(0.5f * PI * v);
         Vector3 p;
@@ -95,4 +95,13 @@ public static class FunctionLibrary
         return Vector3.Lerp(from(u, v, t), to(u, v, t), SmoothStep(0f, 1f, progress));
     }
 }   
+
+
+
+
+
+
+
+
+
 
