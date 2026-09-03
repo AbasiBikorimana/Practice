@@ -1,5 +1,3 @@
-using System.Data;
-using UnityEditorInternal;
 using UnityEngine;
 
 public class GPUGraph : MonoBehaviour
