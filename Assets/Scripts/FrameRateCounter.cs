@@ -23,12 +23,17 @@ public class FrameRateCounter : MonoBehaviour
         frames += 1;
         duration += FrameDuration;
 
+        if (FrameDuration <= 0f)
+        {
+            return;
+        }
+
         if (FrameDuration < BestDuration)
         {
             BestDuration = FrameDuration;
         }
         
-        if (FrameDuration > BestDuration)
+        if (FrameDuration > WorstDuration)
         {
             WorstDuration = FrameDuration;
         }

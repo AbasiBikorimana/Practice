@@ -1,7 +1,4 @@
-using JetBrains.Annotations;
-using UnityEditorInternal;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class Graph : MonoBehaviour
 {
@@ -10,7 +7,7 @@ public class Graph : MonoBehaviour
     [SerializeField]  
     Transform pointPrefab;
 
-    [SerializeField, Range(10,100)]
+    [SerializeField, Range(10,200)]
     int resolution = 10; 
 
     [SerializeField]
